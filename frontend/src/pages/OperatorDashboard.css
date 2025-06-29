@@ -1,0 +1,177 @@
+/* General Layout */
+.operator-page-container {
+    background-color: #f4f7fa;
+}
+
+.operator-header {
+    background-color: #1e3a8a; /* Dark Blue */
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.operator-header .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.operator-header .nav-links a {
+    color: white;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.operator-header .nav-links a:hover {
+    opacity: 0.8;
+}
+
+.operator-content {
+    padding: 2rem;
+}
+
+/* Pending/Rejected View */
+.pending-view-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.pending-card {
+    background-color: white;
+    padding: 2rem 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+}
+
+.status-display {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Main Dashboard Cards (New Style) */
+.dashboard-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  height: 100%;
+}
+
+.dashboard-card .card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dashboard-card .card-title {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 0;
+  font-weight: 500;
+}
+
+.dashboard-card .card-number {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #1e3a8a; /* A deep blue color */
+  margin: 0.5rem 0;
+}
+
+.dashboard-card.action-card .card-content {
+    justify-content: flex-end;
+    padding-bottom: 1.5rem;
+}
+
+.dashboard-card.action-card .card-subtitle {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-top: 0.25rem;
+}
+
+.dashboard-card .card-button {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  background-image: linear-gradient(to right, #6D80FE, #A060FF);
+  color: white;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.dashboard-card .card-button:hover {
+  opacity: 0.9;
+  color: white;
+}
+
+/* Flights and Bookings Grid Views */
+.data-table-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.flight-card, .booking-card {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.flight-id, .booking-id {
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 0.5rem;
+}
+
+.flight-details-grid, .detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+}
+
+.detail-item {
+    font-size: 0.9rem;
+}
+
+.passengers-section {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.booking-status {
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+.status-confirmed {
+    color: #155724;
+    background-color: #d4edda;
+}
+
+.status-cancelled {
+    color: #721c24;
+    background-color: #f8d7da;
+}

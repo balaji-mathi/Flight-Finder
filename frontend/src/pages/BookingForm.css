@@ -1,0 +1,75 @@
+/* frontend/src/pages/BookingForm.css */
+
+.booking-page-container {
+    background-color: #f8f9fa;
+    min-height: calc(100vh - 56px); /* Adjust 56px based on your navbar height */
+    padding: 3rem 0;
+}
+
+.booking-form-card {
+    background: white;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 2.5rem;
+}
+
+.booking-form-card h2 {
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.booking-form-card .flight-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.booking-form-card .flight-info-grid strong {
+    color: #555;
+}
+
+.booking-form-card .input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.booking-form-card .form-label {
+    font-weight: 500;
+    color: #666;
+}
+
+.booking-form-card .total-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.booking-form-card .btn-primary {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+.passenger-details-section {
+    margin-top: 2rem;
+}
+
+.passenger-details-section h4 {
+    margin-bottom: 1rem;
+}
+
+.passenger-card {
+    border: 1px solid #e0e0e0;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}

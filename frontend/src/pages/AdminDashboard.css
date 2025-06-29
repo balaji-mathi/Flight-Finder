@@ -1,0 +1,117 @@
+/* frontend/src/pages/AdminDashboard.css */
+/* MODIFIED */
+
+.admin-page-container {
+  background: #fff; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-header {
+  background-image: 
+        linear-gradient(45deg, rgba(106, 17, 203, 0.999), rgba(37, 117, 252, 0.999)), 
+        url('../assets/flight-navbar.jpg');/* Darker, more professional blue */
+  color: white;
+  padding: 1rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+}
+
+.admin-header .brand {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.admin-header .nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.8rem;
+  font-size: 1rem;
+  opacity: 0.85;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.admin-header .nav-links a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.admin-content {
+  padding: 2.5rem;
+  flex-grow: 1;
+}
+
+.stat-card {
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card .card-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.stat-card .card-count {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #004a99;
+  margin-bottom: 1.25rem;
+}
+
+.stat-card .btn-primary {
+  width: 100%;
+  font-weight: 600;
+}
+
+.applications-card {
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+}
+
+.applications-card h4 {
+  font-weight: 600;
+  color: #333;
+}
+
+/* This container enables the internal scrollbar */
+.applications-list-container {
+  max-height: 350px; /* Adjust height as needed */
+  overflow-y: auto;
+  padding-right: 10px; /* Space for scrollbar */
+}
+
+.application-item {
+  border: none !important;
+  border-bottom: 1px solid #f0f0f0 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.5rem !important;
+}
+
+.application-item:last-child {
+  border-bottom: none !important;
+}
+
+.no-requests-message {
+  padding: 1rem 0.5rem;
+}

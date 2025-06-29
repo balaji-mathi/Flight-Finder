@@ -1,0 +1,44 @@
+/* frontend/src/components/Footer.css */
+
+.site-footer {
+  background-color: #212529; /* Dark charcoal */
+  color: #adb5bd; /* Soft grey text */
+  padding: 40px 0;
+  font-size: 0.9rem;
+}
+
+.site-footer h5 {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.site-footer p {
+  line-height: 1.7;
+}
+
+.site-footer .footer-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.site-footer .footer-links li {
+  margin-bottom: 10px;
+}
+
+/* This style is no longer used for links but kept for consistency */
+.site-footer .footer-links a {
+  color: #adb5bd;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.site-footer .footer-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.site-footer hr {
+  border-top-color: #495057;
+  margin-top: 20px;
+}

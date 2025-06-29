@@ -1,0 +1,75 @@
+/* frontend/src/pages/MyBookings.css */
+
+.my-bookings-page {
+    background-color: #f4f7f9; /* Light grey background for the page */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.booking-card {
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.booking-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.booking-card .booking-id {
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+  word-break: break-all;
+}
+
+.booking-card .detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 1rem;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.booking-card .detail-item {
+    word-wrap: break-word;
+}
+
+.booking-card .detail-item strong {
+  color: #495057;
+}
+
+.booking-card .passengers-section {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.booking-card .passenger-list {
+  list-style-type: decimal; /* Use numbers for the list */
+  padding-left: 20px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.booking-card .passenger-list li {
+  margin-bottom: 0.25rem;
+}
+
+.booking-card .booking-status {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.booking-card .status-confirmed {
+  color: #28a745; /* Green */
+}
+
+.booking-card .status-cancelled {
+  color: #dc3545; /* Red */
+}

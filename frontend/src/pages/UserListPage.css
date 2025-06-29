@@ -1,0 +1,106 @@
+/* frontend/src/pages/UserListPage.css */
+/* MODIFIED - Added styles for status badges and action buttons */
+
+.admin-users-page {
+  background-color: #f4f7f9;
+  min-height: 100vh;
+}
+
+.admin-header {
+  background-color: #004a99;
+  color: white;
+  padding: 1rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.admin-header .brand {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.admin-header .nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.8rem;
+  font-size: 1rem;
+  opacity: 0.85;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.admin-header .nav-links a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.admin-content {
+  padding: 2.5rem;
+}
+
+.user-section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.user-info-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.95rem;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.user-info-card span {
+  flex: 1;
+  min-width: 180px;
+  color: #495057;
+}
+
+.user-info-card span strong {
+  color: #212529;
+  margin-right: 8px;
+}
+
+/* --- NEW STYLES --- */
+
+.operator-status {
+  flex-grow: 0.5;
+  min-width: 150px; /* Give it enough space */
+}
+
+.operator-status .badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.4em 0.8em;
+  letter-spacing: 0.5px;
+}
+
+.operator-actions {
+  display: flex;
+  gap: 0.5rem; /* Space between buttons */
+  justify-content: flex-end;
+  flex-grow: 0.5;
+  min-width: 180px;
+}
+
+.operator-actions .btn {
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+}

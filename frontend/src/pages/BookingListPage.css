@@ -1,0 +1,98 @@
+/* frontend/src/pages/BookingListPage.css */
+/* MODIFIED - Styles for the new card-based layout */
+
+.admin-bookings-page {
+    background-color: #f4f7f9;
+    min-height: 100vh;
+}
+
+.admin-header {
+    background-color: #004a99;
+    color: white;
+    padding: 1rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.admin-header .brand {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+  
+.admin-header .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.8rem;
+}
+  
+.admin-content {
+    padding: 2.5rem;
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* Styles for the new card layout */
+.admin-booking-card {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    transition: box-shadow 0.3s ease;
+}
+
+.admin-booking-card:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.admin-booking-card p {
+    margin-bottom: 0.6rem;
+    color: #495057;
+}
+
+.admin-booking-card strong {
+    color: #212529;
+    font-weight: 600;
+}
+
+.admin-booking-card .passengers-list {
+    padding-left: 20px;
+    margin: 5px 0 1rem 0;
+}
+
+.status-text {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.status-confirmed {
+    color: #198754; /* Bootstrap success green */
+}
+
+.status-cancelled {
+    color: #dc3545; /* Bootstrap danger red */
+}
+
+.cancel-button {
+    margin-top: 1rem;
+    width: 100%;
+    font-weight: 600;
+}
+
+/* This is a fallback for the old table style which is no longer used, but safe to keep */
+.data-table-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}

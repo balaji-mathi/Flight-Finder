@@ -1,0 +1,155 @@
+/* frontend/src/pages/Home.css */
+/* MODIFIED - Removed fixed background attachment for normal scrolling */
+
+/* Main hero section with the purple gradient overlay on the background image */
+.hero-section {
+  padding: 60px 0;
+  color: white;
+  background: 
+    linear-gradient(45deg, rgba(106, 17, 203, 0.85), rgba(37, 117, 252, 0.75)), 
+    url('../assets/hero-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+/* The white card containing the search form */
+.search-card {
+  background: white;
+  color: #333;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.search-card .form-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #6c757d;
+}
+
+.search-card .align-items-end .form-label {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.search-card .align-items-end > div {
+  align-self: flex-end;
+}
+
+/* Purple search button */
+.search-btn {
+  background-color: #6a11cb;
+  border-color: #6a11cb;
+  font-weight: 600;
+  padding: 0.65rem 1.5rem;
+  width: 100%;
+}
+.search-btn:hover {
+  background-color: #5b0ebe;
+  border-color: #5b0ebe;
+}
+
+.results-wrapper {
+  background: 
+    linear-gradient(45deg, rgba(106, 17, 203, 0.8), rgba(37, 117, 252, 0.7)), 
+    url('../assets/flight-navbar.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* --- FIX: Removed the line below to stop the background from being fixed --- */
+  /* background-attachment: fixed; */
+}
+
+/* The area below the hero section for displaying flight results */
+.results-section {
+  padding: 50px 0;
+  color: #ffffff; 
+}
+
+.results-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* A single flight result card */
+.flight-result-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #f1f2f3;
+  color: #343a40;
+}
+
+.book-btn {
+  background-color: #6a11cb;
+  border-color: #6a11cb;
+}
+.book-btn:hover {
+  background-color: #5b0ebe;
+  border-color: #5b0ebe;
+}
+
+/* Styles for the About Us Section with readable white text */
+.about-us-section {
+  padding: 60px 0;
+  background: 
+    linear-gradient(45deg, rgba(106, 17, 203, 0.88), rgba(37, 117, 252, 0.8)), 
+    url('../assets/hero-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.about-us-title {
+  font-weight: 700;
+  color: #f8f7f7;
+  margin-bottom: 40px;
+}
+
+.about-us-text {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.about-us-text strong {
+  color: #ffffff;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .flight-result-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .flight-result-item > a {
+    width: 100%;
+  }
+  .flight-result-item .book-btn {
+    width: 100%;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}

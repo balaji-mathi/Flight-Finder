@@ -1,0 +1,129 @@
+/* frontend/src/components/Navbar.css */
+
+/* --- NEW, MORE SPECIFIC THEME for Auth pages (Login/Register) --- */
+.navbar.navbar-auth {
+    background: linear-gradient(45deg, rgba(106, 17, 203, 0.999), rgba(37, 117, 252, 0.999)) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar.navbar-auth .navbar-brand,
+.navbar.navbar-auth .nav-link {
+    color: #ffffff !important;
+    text-shadow: none;
+}
+
+.navbar.navbar-auth .nav-link:hover {
+    opacity: 0.85;
+}
+
+.navbar.navbar-auth .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar.navbar-auth .navbar-toggler {
+    border-color: rgba(255, 255, 252, 0.25) !important;
+}
+
+
+/* MODIFIED - Renamed and restyled operator theme to match the admin theme. */
+
+/* Theme for the transparent homepage navbar (LOGGED-OUT state) */
+.navbar-hero {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border-bottom: none;
+    background-size: cover;
+    background-position: center;
+    background-image: 
+        linear-gradient(45deg, rgba(106, 17, 203, 0.999), rgba(37, 117, 252, 0.999)), 
+        url('../assets/flight-navbar.jpg');
+}
+
+.navbar-hero .navbar-brand,
+.navbar-hero .nav-link,
+.navbar-hero .nav-dropdown,
+.navbar-hero .dropdown-toggle {
+    color: #ffffff !important;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.navbar-hero .nav-link:hover {
+    transform: scale(1.05);
+}
+
+/* THEME FOR LOGGED-IN USER ON HOMEPAGE */
+.navbar-user-hero {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border-bottom: none;
+    background-size: cover;
+    background-position: center;
+    background-image: 
+        linear-gradient(45deg, rgba(106, 17, 203, 0.999), rgba(37, 117, 252, 0.999)), 
+        url('../assets/flight-navbar.jpg');
+}
+
+.navbar-user-hero .navbar-brand,
+.navbar-user-hero .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.navbar-user-hero .navbar-brand {
+    font-weight: bold;
+}
+.navbar-user-hero .nav-link:hover {
+    opacity: 0.9;
+}
+.navbar-user-hero .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+.navbar-user-hero .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+
+/* THEME FOR LOGGED-IN USER ON ALL OTHER PAGES */
+.navbar-user-theme {
+    background-color: #2575fc !important;
+}
+.navbar-user-theme .navbar-brand,
+.navbar-user-theme .nav-link {
+    color: #ffffff !important;
+    text-shadow: none;
+}
+.navbar-user-theme .navbar-brand {
+    font-weight: bold;
+}
+.navbar-user-theme .nav-link {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+.navbar-user-theme .nav-link:hover {
+    color: #ffffff !important;
+}
+.navbar-user-theme .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%path stroke='rgba(255, 255, 255, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+.navbar-user-theme .navbar-toggler {
+    border-color: rgba(255, 255, 252, 0.25) !important;
+}
+
+/* --- FIX: THEME FOR ADMINS AND OPERATORS --- */
+.navbar-admin-theme {
+    background-color: #004a99 !important; /* The correct dark blue */
+}
+.navbar-admin-theme .navbar-brand,
+.navbar-admin-theme .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-shadow: none;
+}
+.navbar-admin-theme .nav-link:hover {
+    color: #ffffff !important;
+}

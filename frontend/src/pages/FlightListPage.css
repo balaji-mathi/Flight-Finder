@@ -1,0 +1,62 @@
+/* frontend/src/pages/FlightListPage.css */
+/* NEW FILE */
+
+.admin-flights-page {
+    background-color: #f4f7f9;
+    min-height: 100vh;
+}
+
+/* Consistent Admin Header */
+.admin-header {
+    background-color: #004a99;
+    color: white;
+    padding: 1rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.admin-header .brand {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+  
+.admin-header .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.8rem;
+}
+  
+.admin-content {
+    padding: 2.5rem;
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.flight-card {
+    background: #f8f9fa; /* Light grey background from screenshot */
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    height: 100%; /* Ensures cards in the same row are the same height */
+}
+
+.flight-card p {
+    margin-bottom: 0.5rem;
+    color: #495057;
+}
+
+.flight-card p strong {
+    color: #212529;
+    font-weight: 600;
+    margin-right: 5px;
+}
